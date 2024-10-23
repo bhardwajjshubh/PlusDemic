@@ -10,44 +10,51 @@ const HowItHelps = () => {
   return (
     <section>
       <div className="container py-16 my-20">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-          <div className="col-span-2">
-            <div className="grid grid-cols-2 md:grid-cols-2 xl:grid-cols-3 gap-5">
-              <motion.div
-                variants={SlideRight(0.2)}
-                whileInView={"animate"}
-                initial="initial"
-              >
-                <Card
-                  icon={Icon1}
-                  heading="Symptoms"
-                  text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risussed volutpat non."
-                />
-              </motion.div>
-              <motion.div
-                variants={SlideRight(0.4)}
-                whileInView={"animate"}
-                initial="initial"
-              >
-                <Card
-                  icon={Icon2}
-                  heading="Recommendations"
-                  text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risussed volutpat non."
-                />
-              </motion.div>
-              <motion.div
-                variants={SlideRight(0.6)}
-                whileInView={"animate"}
-                initial="initial"
-              >
-                <Card
-                  icon={Icon3}
-                  heading="Local information"
-                  text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risussed volutpat non."
-                />
-              </motion.div>
-            </div>
-          </div>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+  <div className="col-span-2 w-full">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-3 gap-5">
+      <motion.div
+        variants={SlideRight(0.2)}
+        whileInView={"animate"}
+        initial="initial"
+        className="w-full"
+      >
+        <Card
+          icon={Icon1}
+          heading="Symptoms"
+          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risussed volutpat non."
+          className="break-words"
+        />
+      </motion.div>
+      <motion.div
+        variants={SlideRight(0.4)}
+        whileInView={"animate"}
+        initial="initial"
+        className="w-full"
+      >
+        <Card
+          icon={Icon2}
+          heading="Recommendations"
+          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risussed volutpat non."
+          className="break-words"
+        />
+      </motion.div>
+      <motion.div
+        variants={SlideRight(0.6)}
+        whileInView={"animate"}
+        initial="initial"
+        className="w-full"
+      >
+        <Card
+          icon={Icon3}
+          heading="Local information"
+          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risussed volutpat non."
+          className="break-words"
+        />
+      </motion.div>
+    </div>
+  </div>
+
           <motion.div
             variants={SlideLeft(0.8)}
             whileInView={"animate"}
